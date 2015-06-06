@@ -1,2 +1,6 @@
 ---
-# tasks file for nodejs
+- name: install npm
+  yum: name=npm state=present
+  tags:
+    - nodejs
+    - packages
