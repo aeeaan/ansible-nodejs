@@ -4,3 +4,19 @@
   tags:
     - nodejs
     - packages
+
+- name: install bower
+  npm: name=bower version={{ nodejs_bower_version }} global=yes state=present
+  when: nodejs_install_bower
+  tags:
+    - nodejs
+    - bower
+    - packages
+
+- name: install gulp
+  npm: name=gulp version={{ nodejs_gulp_version }} global=yes state=present
+  when: nodejs_install_gulp
+  tags:
+    - nodejs
+    - gulp
+    - packages
