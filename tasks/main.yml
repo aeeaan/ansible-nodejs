@@ -22,8 +22,8 @@
     - packages
 
 - name: install grunt-cli
-  npm: name=grunt-cli version={{ nodejs_grunt-cli_version }} global=yes state=present
-  when: nodejs_install_grunt-cli
+  npm: name=grunt-cli version={{ nodejs_grunt_cli_version }} global=yes state=present
+  when: nodejs_install_grunt_cli
   tags:
     - nodejs
     - grunt
