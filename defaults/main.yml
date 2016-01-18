@@ -3,3 +3,5 @@ nodejs_install_bower: false
 nodejs_bower_version: '>0'
 nodejs_install_gulp: false
 nodejs_gulp_version: '>0'
+nodejs_install_grunt-cli: false
+nodejs_grunt-cli_version: '>0'
