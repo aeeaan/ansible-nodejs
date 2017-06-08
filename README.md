@@ -15,6 +15,8 @@ Variables
 | nodejs_bower_version		| '>0'				| 	 			|
 | nodejs_install_gulp		| false				| global install		|
 | nodejs_gulp_version		| '>0'				| 	 			|
+| nodejs_install_grunt_cli	| false				| global install		|
+| nodejs_grunt_cli_version	| '>0'				| 	 			|
 
 Example Playbook
 ----------------
