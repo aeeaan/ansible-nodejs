@@ -22,6 +22,20 @@
     - packages
     - repos
 
+- name: install nodesource source repo
+  yum_repository:
+    name: nodesource
+    description: Node.js Packages for Enterprise Linux
+    baseurl: "https://rpm.nodesource.com/pub_{{ nodejs_version }}.x/el/{{ ansible_distribution_major_version }}/SRPMS"
+    failovermethod: priority
+    enabled: no
+    gpgcheck: yes
+    priority: 1
+  tags:
+    - nodejs
+    - packages
+    - repos
+
 - name: install nodejs
   yum:
     name: nodejs
